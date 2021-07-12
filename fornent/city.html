@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông tin Thành Phố</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+    <script src="cityjs.js"></script>
+
+
+</head>
+<body>
+<!--form thêm mới thông tin thành phố-->
+<h2>Thêm mới Thành phố</h2>
+<form action="" method="post">
+    <input type="text" name="name" id="idname" placeholder="Name"><br>
+    <input type="text" name="name" id="idcountry" placeholder="country"><br>
+    <input type="number" name="age" id="idarea" placeholder="area"><br>
+    <input type="text" name="address" id="idpopulation" placeholder="population"><br>
+    <input type="text" name="email" id="idgdp" placeholder="gdp"><br>
+    <input type="text" name="email" id="iddescription" placeholder="description"><br>
+    <button type="submit" onclick="addStudent()">AddNew</button>
+</form>
+
+<br><br><br><br>
+<!--Hiển thị thông tin thành phố-->
+<table border="1 solid" id="table_city">
+
+        <tr>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Area</th>
+            <th>Population</th>
+            <th>GDP</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+        <div id="list_city">
+        <tr>
+            <td>Name</td>
+            <td>Country</td>
+            <td>Area</td>
+            <td>Population</td>
+            <td>GDP</td>
+            <td>Description</td>
+            <th>delete</th>
+            <th>update</th>
+        </tr>
+    </div>
+
+
+</table>
+</body>
+</html>
